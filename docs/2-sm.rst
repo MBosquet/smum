@@ -14,12 +14,13 @@ that is: (a) representative of the underlying population and (b) that contains
 parameters required for the estimation of consumption intensities.
 A traditional approach would simply reweight this survey to the analysis area
 (in this case a particular city) and re-compute the consumption levels. The
-problem with this approach are following: (1) this approach requires a detail
-survey for the specific resource to be estimated; (2) the survey is not
-representative for the projection of the population and (3) the method does not
-allow for an integrated analysis, i.e. combining variables from different
-surveys. The second point can be solved through the implementation of a dynamic
-population model at the expense of detail data input requirements.
+problems with this approach are three-fold: 
+(1) this approach requires a detail survey for the specific resource to be estimated; 
+(2) the survey is not representative for the projection of the population and 
+(3) the method does not allow for an integrated analysis, i.e. combining variables from different
+surveys. 
+The second point can be solved through the implementation of a dynamic
+population model at the expense of detailed data input requirements.
 
 The presented approach solves all three problems of the traditional approach by
 constructing a synthetic sample via a Markov-Chain-Monte-Carlo (MCMC) sampling
@@ -44,7 +45,7 @@ sample starts with a uniform distributed weight, e.g. every record represents
 5 households. This means that the sample size (number of records on the sample)
 is five times smaller than the actual number of households. The sample size can
 be redefined to any given number, this means that the sample size can be larger
-than the total number of households. The GREWT algorithm will re-compute these
+than the total number of households. The GREGWT algorithm will re-compute these
 weights in order to match them to know aggregates. This procedure assures that
 the marginal sums of the sample survey match aggregated statistics. For
 example, from the national statistics the model knows that at a given city
